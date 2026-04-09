@@ -1,0 +1,115 @@
+Firm,Segment,HQ Region,Founded,Team Size,Annual Rev.,Rev Growth (YoY),R&D Spend,AI Program,Cloud Stack,Digital Sales,Compliance Tier,Fraud Exposure,Funding Stage,Customer Accts
+OakCircuit OpsBanking SaaS profile,Banking SaaS,"New York, NY",2002,417,141638144.0,15.5,22340000.0,1,Cloud-Forward,73%,Tier 3,Moderate,Series C,339.9K
+QuantumWave SystemsBanking SaaS profile,Banking SaaS,"San Francisco, CA",2013,343,110700000.0,18.5,,1,Cloud native,88%,Tier 3,Elevated,Series C,"108,727"
+OakSignal SystemsBanking SaaS profile,Banking SaaS,"New York, NY",2003,295,104620000.0,14.7,15310000.0,1,Cloud-Forward,68%,Tier 2,Low,Series C,49.6K
+BeaconSummit OpsBanking SaaS profile,Banking SaaS,"Charlotte, NC",2006,263,81900000.0,15.0,13050000.0,0,Cloud-Forward,70%,Tier 3,Moderate,Series C,"332,335"
+NorthMint SuiteBanking SaaS profile,Banking SaaS,"New York, NY",2001,163,65700000.0,5.6,9800000.0,0,Cloud-Native,60%,Tier 3,Moderate,Series B,"97,069"
+IronLedger CoreBanking SaaS profile,Banking SaaS,"Atlanta, GA",2003,164,65550000.0,10.6,9660000.0,1,Hybrid Stack,69%,Tier 3,Moderate,Series B,"102,781"
+GraniteSignal CoreBanking SaaS profile,Banking SaaS,"New York, NY",2004,144,57310000.0,12.0,9910000.0,1,Cloud-Forward,57%,Tier 3,Moderate,Series B,"98,701"
+FrontierHarbor SuiteBanking SaaS profile,Banking SaaS,"Boston, MA",2019,171,55960000.0,12.2,,0,Cloud native,70%,Tier 3,Moderate,Series B,"160,877"
+OakFoundry OpsBanking SaaS profile,Banking SaaS,"Boston, MA",2017,98,42730000.0,9.5,,0,Hybrid Stack,64%,Tier 3,Moderate,Series B,"63,433"
+NorthFoundry SystemsBanking SaaS profile,Banking SaaS,"Seattle, WA",2021,166,38200000.0,7.0,4033209.0,1,Hybrid,76%,Tier 2,Low,Series B,"77,126"
+CobaltFoundry CoreBanking SaaS profile,Banking SaaS,"Seattle, WA",2005,103,27360000.0,8.3,4099999.9999999995,1,Cloud forward,52%,Tier 3,Moderate,Series B,"181,154"
+SignalCircuit CoreBanking SaaS profile,Banking SaaS,"Chicago, IL",2006,52,13600000.0,8.1,2400000.0,0,Cloud-Forward,78%,Tier 2,Low,Series A,"160,254"
+AtlasPoint SureInsurTech profile,InsurTech,"Seattle, WA",1998,762,149113475.0,10.8,14127072.0,0,Hybrid Stack,75%,Tier 3,Moderate,Series C,"710,368"
+SignalPeak CoverInsurTech profile,InsurTech,"Boston, MA",2017,782,147450000.0,11.7,14340000.0,1,Legacy Core,50%,Tier 3,Moderate,Series C,867.8K
+CrestLine ShieldInsurTech profile,InsurTech,"San Francisco, CA",2002,559,140380000.0,8.3,14060000.0,0,Cloud-Native,82%,Tier 2,Moderate,Series C,599.8K
+NorthLedger ShieldInsurTech profile,InsurTech,"Boston, MA",2020,534,127053274.0,8.6,,1,Cloud-Forward,67%,Tier 2,Low,Series C,491.3K
+FrontierCircuit PolicyInsurTech profile,InsurTech,"Boston, MA",2012,404,112872694.0,6.3,10400000.0,0,Cloud-Forward,75%,Tier 3,Moderate,Series C,"1,205,410"
+PrimeCircuit ShieldInsurTech profile,InsurTech,"New York, NY",2007,385,108710000.0,13.7,12310000.0,0,Cloud-Native,83%,Tier 4,Elevated,Series C,469.4K
+CrestLedger ShieldInsurTech profile,InsurTech,"San Francisco, CA",2008,203,56450000.0,5.7,5798556.0,0,Cloud forward,79%,Tier 3,Moderate,Series B,"922,148"
+BlueVista CoverInsurTech profile,InsurTech,"Austin, TX",2020,221,53900000.0,5.9,3360000.0,0,Hybrid Stack,67%,Tier 4,Moderate,Series B,"652,308"
+SterlingLine PolicyInsurTech profile,InsurTech,"San Francisco, CA",2003,204,50070000.0,15.2,7410000.0,1,Cloud-Native,87%,Tier 3,Elevated,Series B,"715,540"
+CrestPath ShieldInsurTech profile,InsurTech,"New York, NY",2009,248,49730000.0,5.6,4280000.0,0,Cloud forward,65%,Tier 4,Moderate,Series B,"1,039,484"
+FrontierWave SureInsurTech profile,InsurTech,"Seattle, WA",2023,90,39910000.0,20.3,7300000.0,1,Cloud native,98%,Tier 2,Moderate,Series B,384.4K
+VertexRiver RiskInsurTech profile,InsurTech,"Austin, TX",2006,171,37750000.0,12.1,4800000.0,1,Cloud forward,76%,Tier 3,Moderate,Series B,"1,275,862"
+SummitField SureInsurTech profile,InsurTech,"New York, NY",2013,143,34590000.0,6.4,3800000.0,,Hybrid Stack,75%,Tier 3,Moderate,Series B,"1,010,032"
+VertexRiver PolicyInsurTech profile,InsurTech,"Atlanta, GA",2009,103,26880000.0,6.3,2080000.0,0,Cloud-Forward,68%,Tier 4,Moderate,Series B,"142,237"
+FrontierWave PolicyInsurTech profile,InsurTech,"New York, NY",2022,92,24310000.0,1.4,1900000.0,1,Cloud forward,74%,Tier 3,Moderate,Series A,"1,906,025"
+SignalRiver AdvanceLending profile,Lending,"Miami, FL",2001,"2,000",454210000.0,14.3,49480000.0,1,Cloud-Forward,78%,Tier 3,Elevated,Late Stage,"1,028,126"
+DeltaSignal AdvanceLending profile,Lending,"Miami, FL",2022,887,419780000.0,10.8,43960000.0,0,Cloud native,89%,Tier 3,High,Late Stage,"550,941"
+AtlasMint FundingLending profile,Lending,"San Francisco, CA",2001,1.2K,339970000.0,15.7,47600000.0,1,Cloud forward,87%,Tier 4,High,Late Stage,1.07M
+BlueFoundry FundingLending profile,Lending,"Boston, MA",2021,642,188900000.0,5.6,13550000.0,0,Hybrid Stack,65%,Tier 3,Elevated,Late Stage,1.03M
+GraniteGrid CapitalLending profile,Lending,"Charlotte, NC",1998,788,178710000.0,16.9,,1,Cloud-Native,79%,Tier 3,Elevated,Series C,"704,395"
+CedarVista LendLending profile,Lending,"New York, NY",2004,488,173640000.0,10.6,,1,Cloud forward,80%,Tier 3,Elevated,Series C,"778,306"
+SterlingRiver FundingLending profile,Lending,"Seattle, WA",2002,375,156820742.0,13.8,21050000.0,,Hybrid Stack,56%,Tier 2,Moderate,Series C,"614,011"
+CrestAnchor LendLending profile,Lending,"New York, NY",2003,436,153581663.0,9.7,14530000.0,1,Cloud-Forward,76%,Tier 2,Moderate,Series C,"346,140"
+PrimeSummit CapitalLending profile,Lending,"Atlanta, GA",1999,502,149100000.0,13.9,17900000.0,0,Cloud-Native,81%,Tier 3,High,Series C,"1,129,518"
+CobaltVista LendLending profile,Lending,"Miami, FL",2008,564,138400000.0,9.1,16200000.0,0,Cloud forward,78%,Tier 2,Moderate,Series C,"1,208,863"
+PioneerSignal CapitalLending profile,Lending,"Austin, TX",2020,507,136930000.0,13.2,16820000.0,,Cloud forward,71%,Tier 2,Moderate,Series C,"469,550"
+PrimePulse LendLending profile,Lending,"San Francisco, CA",2022,592,131850000.0,9.1,10900000.0,,Hybrid Stack,58%,Tier 4,Elevated,Series C,"958,245"
+QuantumSummit FundingLending profile,Lending,"New York, NY",2014,460,128210000.00000001,9.4,14200000.0,1,Hybrid,62%,Tier 4,Elevated,Series C,"253,780"
+DeltaLedger AdvanceLending profile,Lending,"San Francisco, CA",1998,331,123030000.0,4.2,13700000.0,0,Cloud-Forward,59%,Tier 4,Elevated,Series C,2160.3K
+SummitMint FundingLending profile,Lending,"Charlotte, NC",2014,411,120110000.0,10.1,,0,Cloud forward,65%,Tier 3,Elevated,Series C,"595,158"
+SterlingGrid AdvanceLending profile,Lending,"Atlanta, GA",2000,284,116030000.0,15.1,16810000.0,1,Cloud-Native,77%,Tier 3,Elevated,Series C,2616.2K
+AtlasWave FundingLending profile,Lending,"Austin, TX",2021,681,115030000.0,8.5,13860000.0,0,Cloud forward,73%,Tier 3,Elevated,Series C,"72,261"
+BeaconLine CreditLending profile,Lending,"San Francisco, CA",2004,248,110050000.0,8.8,12080000.0,0,Cloud forward,74%,Tier 3,Elevated,Series C,"1,247,090"
+GraniteField FundingLending profile,Lending,"Seattle, WA",2016,380,99000000.0,11.7,,1,Cloud-Forward,81%,Tier 2,Elevated,Series C,4363.6K
+SummitLine FundingLending profile,Lending,"Chicago, IL",2018,317,96540000.0,14.4,,1,Hybrid,61%,Tier 3,Elevated,Series C,534.2K
+SterlingFoundry AdvanceLending profile,Lending,"New York, NY",2012,256,74050000.0,10.8,,1,Cloud-Forward,70%,Tier 3,Elevated,Series B,"280,888"
+IronStone AdvanceLending profile,Lending,"New York, NY",2013,327,68540000.0,15.4,8250000.0,1,Cloud-Forward,59%,Tier 3,Elevated,Series B,"3,519,897"
+VertexLine CreditLending profile,Lending,"Seattle, WA",2004,337,62410000.0,7.0,7100000.0,0,Hybrid Stack,53%,Tier 4,Elevated,Series B,"635,127"
+FrontierHarbor CapitalLending profile,Lending,"New York, NY",2004,168,56350000.0,6.7,4800000.0,1,Cloud forward,62%,Tier 3,Elevated,Series B,"392,310"
+OakPath CapitalLending profile,Lending,"Seattle, WA",2011,161,48220000.0,7.4,3730000.0,0,Cloud-Forward,76%,Tier 3,Elevated,Series B,"1,812,160"
+SummitPulse CapitalLending profile,Lending,"Austin, TX",2012,153,46400000.0,12.2,6701201.0,0,Cloud forward,72%,Tier 3,Elevated,Series B,"780,028"
+DeltaFoundry AdvanceLending profile,Lending,"San Francisco, CA",2020,143,44230000.0,5.1,3900000.0,0,Cloud-Forward,65%,Tier 3,Elevated,Series B,1.46M
+PrimeCircuit CreditLending profile,Lending,"Austin, TX",2001,95,22160000.0,6.1,2170000.0,0,Hybrid Stack,54%,Tier 3,Elevated,Series A,648.0K
+BeaconGrid RailsPayments profile,Payments,"Miami, FL",2002,"1,165",380700975.0,14.2,,,Cloud-Native,94%,Tier 2,Elevated,Late Stage,"1,841,023"
+AtlasLedger PayPayments profile,Payments,"Miami, FL",2001,969,254730000.0,20.0,38040000.0,1,Cloud native,98%,Tier 3,High,Late Stage,5840.3K
+QuantumWave PayPayments profile,Payments,"San Francisco, CA",2009,780,246100000.0,16.3,32450000.000000004,1,Cloud native,87%,Tier 3,High,Late Stage,"3,532,696"
+SterlingPeak PayPayments profile,Payments,"San Francisco, CA",2022,"1,098",238980000.0,10.3,25110000.0,1,Cloud forward,70%,Tier 3,Elevated,Late Stage,1794.2K
+CedarAnchor TransferPayments profile,Payments,"San Francisco, CA",2010,697,221930000.0,21.9,,1,Cloud-Native,79%,Tier 3,Elevated,Late Stage,"3,243,346"
+CrestGrid RailsPayments profile,Payments,"Charlotte, NC",2013,521,209800000.0,15.7,28840000.0,1,Cloud native,83%,Tier 3,High,Late Stage,"978,625"
+AtlasLine GatewayPayments profile,Payments,"Chicago, IL",2019,448,170440000.0,15.7,29350000.0,1,Cloud forward,81%,Tier 3,High,Series C,"6,810,147"
+SummitStone PayPayments profile,Payments,"Boston, MA",2008,512,154900000.0,19.1,24800000.0,1,Cloud native,98%,Tier 2,Elevated,Series C,1010.6K
+QuantumBridge CheckoutPayments profile,Payments,"New York, NY",2010,375,141100000.0,14.4,,1,Cloud-Native,84%,Tier 3,High,Series C,"1,222,492"
+BlueVista TransferPayments profile,Payments,"San Francisco, CA",2001,579,132880000.0,14.9,,1,Cloud-Native,88%,Tier 3,High,Series C,"5,751,872"
+SignalHarbor PayPayments profile,Payments,"Atlanta, GA",2006,395,125364706.0,14.6,15300000.0,1,Cloud native,95%,Tier 2,Elevated,Series C,"2,507,067"
+GraniteStone TransferPayments profile,Payments,"New York, NY",2005,563,117800000.0,13.8,16500000.0,1,Cloud native,90%,Tier 3,High,Series C,"624,569"
+SignalFoundry RailsPayments profile,Payments,"San Francisco, CA",2020,446,104740000.0,6.6,13420000.0,,Cloud-Forward,73%,Tier 3,Elevated,Series C,2.26M
+GraniteGrid TransferPayments profile,Payments,"Boston, MA",1998,240,85650000.0,14.7,12860432.0,1,Cloud-Forward,88%,Tier 2,Elevated,Series C,"7,231,563"
+HarborPath GatewayPayments profile,Payments,"Seattle, WA",2010,403,85398522.0,13.5,,0,Cloud forward,81%,Tier 1,Elevated,Series C,1.35M
+DeltaLedger CheckoutPayments profile,Payments,"Chicago, IL",2023,310,84260000.0,13.8,,,Hybrid,69%,Tier 2,Moderate,Series C,"4,069,129"
+DeltaPulse RailsPayments profile,Payments,"New York, NY",2012,345,70100000.0,9.5,7920000.0,1,Cloud-Forward,95%,Tier 2,Elevated,Series B,7734.0K
+QuantumSummit PayPayments profile,Payments,"Austin, TX",1998,137,60620000.0,14.4,,1,Cloud-Native,91%,Tier 3,High,Series B,"1,910,638"
+CrestSummit CheckoutPayments profile,Payments,"San Francisco, CA",2008,242,55430000.0,19.1,8830000.0,1,Cloud-Native,86%,Tier 2,Elevated,Series B,2190.3K
+HarborRiver TransferPayments profile,Payments,"San Francisco, CA",2000,136,52150000.0,14.7,,0,Cloud-Native,74%,Tier 2,Moderate,Series B,"4,474,930"
+AtlasPoint CheckoutPayments profile,Payments,"Austin, TX",2008,161,49120675.0,15.6,8800000.0,1,Cloud native,88%,Tier 4,High,Series B,1309.3K
+CedarHarbor CheckoutPayments profile,Payments,"San Francisco, CA",2023,177,41830000.0,9.1,4924039.0,1,Hybrid Stack,60%,Tier 3,Elevated,Series B,5481.4K
+QuantumStone TransferPayments profile,Payments,"San Francisco, CA",2019,109,39430000.0,11.5,5130000.0,0,Cloud-Forward,74%,Tier 2,Moderate,Series B,"6,396,966"
+AtlasLine ComplyRegTech profile,RegTech,"Boston, MA",2017,595,179090000.0,12.4,24984652.0,1,Cloud-Forward,49%,Tier 4,Moderate,Series C,195.3K
+QuantumCircuit RegRegTech profile,RegTech,"San Francisco, CA",2001,207,76800000.0,6.7,,0,Hybrid Stack,52%,Tier 3,Moderate,Series C,148.1K
+FrontierGrid ComplyRegTech profile,RegTech,"Chicago, IL",2009,296,62600000.0,12.3,7540000.0,1,Legacy Core,44%,Tier 4,Moderate,Series B,"75,352"
+SterlingWave RegRegTech profile,RegTech,"Salt Lake City, UT",2007,196,56820000.0,13.6,,1,Cloud-Native,70%,Tier 4,Moderate,Series B,"130,289"
+BeaconBridge ComplyRegTech profile,RegTech,"Chicago, IL",2012,181,52500000.0,11.6,8455966.0,0,Cloud forward,74%,Tier 3,Moderate,Series B,173.4K
+HarborMint AuditRegTech profile,RegTech,"Seattle, WA",2008,230,48410000.0,8.9,6970000.0,0,Hybrid Stack,58%,Tier 3,Moderate,Series B,"110,945"
+AtlasLedger VerifyRegTech profile,RegTech,"San Francisco, CA",2008,127,40510000.0,6.6,4360000.0,1,Cloud-Forward,59%,Tier 4,Moderate,Series B,"225,069"
+VertexLedger AuditRegTech profile,RegTech,"Atlanta, GA",2007,118,39220000.0,12.3,5300000.0,0,Cloud-Native,80%,Tier 4,Elevated,Series B,"152,309"
+OakHarbor ComplyRegTech profile,RegTech,"New York, NY",2017,127,32799999.999999996,10.3,4620000.0,1,Cloud forward,72%,Tier 3,Moderate,Series B,"307,851"
+DeltaCircuit WatchRegTech profile,RegTech,"New York, NY",2013,71,30010000.0,10.2,4000000.0,0,Cloud forward,69%,Tier 3,Moderate,Series B,"706,770"
+HarborRiver VerifyRegTech profile,RegTech,"Boston, MA",2015,103,25400000.0,12.8,4240000.0,,Cloud forward,51%,Tier 4,Moderate,Series B,"106,256"
+AtlasFoundry HedgeTreasury Tech profile,Treasury Tech,"Chicago, IL",2023,309,119040000.0,11.9,15840000.0,1,Cloud forward,64%,Tier 4,Moderate,Series C,"85,487"
+QuantumAnchor CashTreasury Tech profile,Treasury Tech,"San Francisco, CA",2008,184,86202317.0,10.5,,1,Cloud-Native,75%,Tier 3,Moderate,Series C,"54,861"
+CedarBridge TreasuryTreasury Tech profile,Treasury Tech,"Boston, MA",2019,286,72226328.0,3.0,7680000.0,1,Cloud forward,58%,Tier 3,Moderate,Series B,"19,114"
+SignalSignal CashTreasury Tech profile,Treasury Tech,"New York, NY",2023,354,72150000.0,5.6,8107800.0,1,Legacy,40%,Tier 3,Moderate,Series B,"54,855"
+QuantumHarbor LiquidityTreasury Tech profile,Treasury Tech,"San Francisco, CA",2013,165,70820000.0,8.1,,0,Hybrid Stack,48%,Tier 3,Moderate,Series B,27.3K
+BeaconHarbor CashTreasury Tech profile,Treasury Tech,"Seattle, WA",2008,211,66400000.00000001,2.7,7110000.0,0,Hybrid,51%,Tier 2,Low,Series B,"44,743"
+PrimeAnchor FlowTreasury Tech profile,Treasury Tech,"Chicago, IL",2009,193,41780000.0,8.0,,1,Cloud-Forward,76%,Tier 3,Moderate,Series B,"33,990"
+CobaltLine CashTreasury Tech profile,Treasury Tech,"Salt Lake City, UT",2015,119,40190000.0,9.0,,1,Cloud forward,66%,Tier 3,Moderate,Series B,"42,821"
+DeltaMint FlowTreasury Tech profile,Treasury Tech,"New York, NY",2001,122,39900000.0,6.4,5380692.0,,Cloud-Forward,77%,Tier 4,Moderate,Series B,"191,246"
+BeaconBridge LiquidityTreasury Tech profile,Treasury Tech,"New York, NY",2013,89,36090000.0,8.0,4900000.0,1,Cloud-Forward,69%,Tier 3,Moderate,Series B,"98,252"
+PioneerVista PortfolioWealthTech profile,WealthTech,"New York, NY",2018,294,142640345.0,13.3,20230000.0,0,Cloud native,91%,Tier 3,Elevated,Series C,"892,462"
+QuantumBridge VestWealthTech profile,WealthTech,"Miami, FL",2000,333,88420000.0,16.3,,1,Cloud native,72%,Tier 1,Low,Series C,"86,866"
+OakGrid PortfolioWealthTech profile,WealthTech,"San Francisco, CA",2001,146,84300000.0,14.5,11420000.0,1,Cloud-Native,78%,Tier 4,Moderate,Series C,"229,816"
+PrimePulse PortfolioWealthTech profile,WealthTech,"Miami, FL",2002,246,80510503.0,16.4,10506641.0,,Cloud native,78%,Tier 4,Moderate,Series C,"977,431"
+GraniteGrid AdvisorsWealthTech profile,WealthTech,"Austin, TX",2013,188,68300000.0,4.2,,,Cloud-Forward,75%,Tier 2,Low,Series B,"451,463"
+SummitVista AdvisorsWealthTech profile,WealthTech,"Boston, MA",2005,229,68070000.0,8.7,8199999.999999999,0,Cloud native,83%,Tier 3,Elevated,Series B,339.5K
+BeaconWave VestWealthTech profile,WealthTech,"San Francisco, CA",2012,225,62920000.0,5.9,,1,Hybrid Stack,58%,Tier 3,Moderate,Series B,"1,159,058"
+DeltaSignal VestWealthTech profile,WealthTech,"San Francisco, CA",2018,163,55317650.0,8.1,,0,Hybrid,64%,Tier 2,Low,Series B,"328,151"
+SummitLedger VestWealthTech profile,WealthTech,"Seattle, WA",2015,272,52940000.0,7.8,,0,Cloud-Forward,59%,Tier 2,Low,Series B,"195,782"
+PrimeAnchor AdvisorsWealthTech profile,WealthTech,"San Francisco, CA",2004,152,48285604.0,15.2,,1,Cloud-Forward,85%,Tier 2,Moderate,Series B,"790,266"
+GraniteGrid VestWealthTech profile,WealthTech,"New York, NY",2002,130,46100000.0,15.8,,1,Cloud forward,83%,Tier 3,Elevated,Series B,"792,131"
+IronBridge AlphaWealthTech profile,WealthTech,"Chicago, IL",2010,145,34040000.0,7.1,3320000.0,0,Hybrid,55%,Tier 3,Moderate,Series B,346.2K
+PioneerStone AlphaWealthTech profile,WealthTech,"San Francisco, CA",2011,166,31550000.0,8.0,4900000.0,1,Cloud-Native,69%,Tier 2,Low,Series B,"2,561,641"
+CrestPath WealthWealthTech profile,WealthTech,"San Francisco, CA",2009,103,29810000.0,5.3,3310000.0,0,Cloud forward,71%,Tier 3,Moderate,Series B,"405,029"
+HarborLedger AdvisorsWealthTech profile,WealthTech,"Seattle, WA",2023,114,22942587.0,2.9,2100000.0,0,Legacy Core,54%,Tier 2,Low,Series A,1491.4K
