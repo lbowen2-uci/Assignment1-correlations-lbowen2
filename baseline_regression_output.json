@@ -1,0 +1,6 @@
+{
+  "n_observations": 103,
+  "intercept": 8.725581395348835,
+  "ai_adoption_coefficient": 3.817751937984493,
+  "model": "rev_growth ~ 1 + ai_program"
+}
