@@ -1,0 +1,80 @@
+Propensity Score Matching Analysis
+===============================
+
+Caliper: 0.1
+Observations before matching: 103
+Observations matched: 64
+
+Baseline OLS:
+
+  Intercept: 8.725581395348835
+  AI coefficient: 3.817751937984493
+
+Matched OLS:
+
+  Intercept: 9.012499999999998
+  AI coefficient: 2.9906249999999983
+
+SMD before matching:
+  founded: -0.0824
+  team_size: 0.3824
+  annual_rev: 0.3545
+  rd_spend: 0.2588
+  digital_sales: 0.4039
+  customer_accts: 0.4149
+  segment_InsurTech: -0.2451
+  segment_Lending: -0.2352
+  segment_Payments: 0.5781
+  segment_RegTech: -0.1089
+  segment_Treasury Tech: 0.2560
+  segment_WealthTech: -0.1847
+  cloud_stack_Cloud native: 0.2183
+  cloud_stack_Cloud-Forward: 0.1337
+  cloud_stack_Cloud-Native: 0.1600
+  cloud_stack_Hybrid: -0.0825
+  cloud_stack_Hybrid Stack: -0.4828
+  cloud_stack_Legacy: 0.1826
+  cloud_stack_Legacy Core: 0.0602
+  compliance_tier_Tier 2: 0.0178
+  compliance_tier_Tier 3: 0.0244
+  compliance_tier_Tier 4: -0.0349
+  fraud_exposure_High: 0.3933
+  fraud_exposure_Low: -0.1089
+  fraud_exposure_Moderate: -0.1768
+  funding_stage_Series A: -0.2605
+  funding_stage_Series B: -0.1819
+  funding_stage_Series C: 0.1537
+
+SMD after matching:
+  founded: 0.0863
+  team_size: -0.1032
+  annual_rev: -0.1035
+  rd_spend: -0.0573
+  digital_sales: -0.0966
+  customer_accts: 0.0791
+  segment_InsurTech: -0.0765
+  segment_Lending: 0.0000
+  segment_Payments: 0.0000
+  segment_RegTech: -0.0886
+  segment_Treasury Tech: -0.3594
+  segment_WealthTech: 0.0886
+  cloud_stack_Cloud native: 0.0000
+  cloud_stack_Cloud-Forward: 0.0674
+  cloud_stack_Cloud-Native: 0.0000
+  cloud_stack_Hybrid: 0.2563
+  cloud_stack_Hybrid Stack: -0.1868
+  cloud_stack_Legacy: 0.0000
+  cloud_stack_Legacy Core: 0.2500
+  compliance_tier_Tier 2: 0.1492
+  compliance_tier_Tier 3: -0.1255
+  compliance_tier_Tier 4: 0.0000
+  fraud_exposure_High: -0.1459
+  fraud_exposure_Low: 0.1868
+  fraud_exposure_Moderate: -0.0616
+  funding_stage_Series A: 0.0000
+  funding_stage_Series B: 0.0000
+  funding_stage_Series C: 0.0641
+
+Output files:
+  Propensity score plot: propensity_score_distribution.png
+  SMD comparison plot: propensity_score_smd_comparison.png

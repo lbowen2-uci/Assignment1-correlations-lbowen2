@@ -22,6 +22,9 @@ OUTPUT_JSON = Path("bana290_profiles.json")
 BASELINE_OUTPUT_JSON = Path("baseline_regression_output.json")
 PSM_OUTPUT_JSON = Path("propensity_score_matching_output.json")
 PSM_OUTPUT_PLOT = Path("propensity_score_distribution.png")
+PSM_OUTPUT_SMD_PLOT = Path("propensity_score_smd_comparison.png")
+PSM_OUTPUT_TEXT = Path("propensity_score_matching_output.txt")
+PSM_CALIPER = 0.10
 
 
 def clean_text(value: str) -> str:
@@ -264,6 +267,32 @@ def save_baseline_results(intercept: float, slope: float, n_obs: int, path: Path
     path.write_text(json.dumps(result, indent=2), encoding="utf-8")
 
 
+def save_psm_text_summary(result: dict, path: Path) -> None:
+    lines = [
+        "Propensity Score Matching Analysis",
+        "===============================\n",
+        f"Caliper: {result['matching_caliper']}",
+        f"Observations before matching: {result['n_observations_before']}",
+        f"Observations matched: {result['n_matched']}",
+        "\nBaseline OLS:\n",
+        f"  Intercept: {result['baseline_ols']['intercept']}",
+        f"  AI coefficient: {result['baseline_ols']['ai_adoption_coefficient']}",
+        "\nMatched OLS:\n",
+        f"  Intercept: {result['matched_ols']['intercept']}",
+        f"  AI coefficient: {result['matched_ols']['ai_adoption_coefficient']}",
+        "\nSMD before matching:",
+    ]
+    for cov, value in result['smd_before'].items():
+        lines.append(f"  {cov}: {value:.4f}")
+    lines.append("\nSMD after matching:")
+    for cov, value in result['smd_after'].items():
+        lines.append(f"  {cov}: {value:.4f}")
+    lines.append("\nOutput files:")
+    lines.append(f"  Propensity score plot: {result['propensity_score_plot']}")
+    lines.append(f"  SMD comparison plot: {result['smd_comparison_plot']}")
+    path.write_text("\n".join(lines), encoding="utf-8")
+
+
 def parse_number(value: str):
     if value is None:
         return None
@@ -391,7 +420,7 @@ def compute_propensity_scores(df: pd.DataFrame, X: pd.DataFrame) -> np.ndarray:
     return ps, beta
 
 
-def nearest_neighbor_matching(df: pd.DataFrame, ps: np.ndarray) -> pd.DataFrame:
+def nearest_neighbor_matching(df: pd.DataFrame, ps: np.ndarray, caliper: float | None = None) -> pd.DataFrame:
     df = df.copy()
     df["propensity_score"] = ps
     treated = df[df["ai_program"] == 1.0].copy()
@@ -404,9 +433,13 @@ def nearest_neighbor_matching(df: pd.DataFrame, ps: np.ndarray) -> pd.DataFrame:
             break
         available_idx = np.array(list(available))
         distances = np.abs(control.loc[available_idx, "propensity_score"].to_numpy() - treated_row["propensity_score"])
-        chosen_label = available_idx[np.argmin(distances)]
-        matches.append((treated_row.name, chosen_label))
-        available.remove(chosen_label)
+        nearest_pos = np.argmin(distances)
+        nearest_idx = available_idx[nearest_pos]
+        nearest_distance = distances[nearest_pos]
+        if caliper is not None and nearest_distance > caliper:
+            continue
+        matches.append((treated_row.name, nearest_idx))
+        available.remove(nearest_idx)
 
     matched_idx = [idx for pair in matches for idx in pair]
     return df.loc[matched_idx].copy()
@@ -462,6 +495,29 @@ def plot_propensity_distribution(df: pd.DataFrame, path: Path) -> None:
     plt.close()
 
 
+def plot_smd_comparison(smd_before: dict[str, float], smd_after: dict[str, float], path: Path) -> None:
+    covariates = list(smd_before.keys())
+    before_values = [smd_before[cov] for cov in covariates]
+    after_values = [smd_after.get(cov, 0.0) for cov in covariates]
+
+    x = np.arange(len(covariates))
+    width = 0.35
+
+    plt.figure(figsize=(max(12, len(covariates) * 0.25), 8))
+    plt.bar(x - width / 2, before_values, width, label="Before", color="tab:blue", alpha=0.8)
+    plt.bar(x + width / 2, after_values, width, label="After", color="tab:orange", alpha=0.8)
+    plt.axhline(0, color="black", linewidth=0.8)
+    plt.axhline(0.1, color="gray", linestyle="--", linewidth=0.8)
+    plt.axhline(-0.1, color="gray", linestyle="--", linewidth=0.8)
+    plt.xticks(x, covariates, rotation=90, fontsize=8)
+    plt.ylabel("Standardized Mean Difference")
+    plt.title("Covariate Balance: SMD Before and After Matching")
+    plt.legend()
+    plt.tight_layout()
+    plt.savefig(path)
+    plt.close()
+
+
 def main() -> None:
     # Prompt: "combine the python files to be one end to end run from clean scraping to baseline analysis to propensity analysis. Have it still output to its respective files"
     # Run the full pipeline in one pass.
@@ -488,7 +544,7 @@ def main() -> None:
 
     covariate_names = list(X.columns)
     smd_before = compute_smd(pd.concat([psm_df[["ai_program", "rev_growth"]], X], axis=1), covariate_names)
-    matched_df = nearest_neighbor_matching(psm_df, ps)
+    matched_df = nearest_neighbor_matching(psm_df, ps, caliper=PSM_CALIPER)
     smd_after = compute_smd(pd.concat([matched_df[["ai_program", "rev_growth"]], X.loc[matched_df.index]], axis=1), covariate_names)
 
     intercept_before, slope_before = estimate_effect(psm_df)
@@ -497,7 +553,9 @@ def main() -> None:
     result = {
         "n_observations_before": len(psm_df),
         "n_matched": len(matched_df),
+        "matching_caliper": PSM_CALIPER,
         "propensity_score_plot": str(PSM_OUTPUT_PLOT),
+        "smd_comparison_plot": str(PSM_OUTPUT_SMD_PLOT),
         "baseline_ols": {
             "intercept": intercept_before,
             "ai_adoption_coefficient": slope_before,
@@ -510,7 +568,12 @@ def main() -> None:
         "smd_after": smd_after,
     }
     PSM_OUTPUT_JSON.write_text(json.dumps(result, indent=2), encoding="utf-8")
-    print(f"Saved PSM output to {PSM_OUTPUT_JSON} and plot to {PSM_OUTPUT_PLOT}")
+    plot_smd_comparison(smd_before, smd_after, PSM_OUTPUT_SMD_PLOT)
+    save_psm_text_summary(result, PSM_OUTPUT_TEXT)
+    print(
+        f"Saved PSM output to {PSM_OUTPUT_JSON}, text summary to {PSM_OUTPUT_TEXT},"
+        f" plot to {PSM_OUTPUT_PLOT}, and SMD comparison plot to {PSM_OUTPUT_SMD_PLOT}"
+    )
 
 
 if __name__ == "__main__":
