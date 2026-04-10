@@ -463,17 +463,23 @@ def plot_propensity_distribution(df: pd.DataFrame, path: Path) -> None:
 
 
 def main() -> None:
-    # Step 1: scrape and clean
+    # Prompt: "combine the python files to be one end to end run from clean scraping to baseline analysis to propensity analysis. Have it still output to its respective files"
+    # Run the full pipeline in one pass.
+
+    # Prompt: "I want to scrape the data from https://bana290-assignment1.netlify.app/"
+    # Scrape and clean the raw site data, then write cleaned outputs.
     scrape_data()
 
-    # Step 2: baseline OLS
+    # Prompt: "Baseline Correlation: Run a naive OLS regression of Revenue Growth on AI Adoption and record the coefficient, save to an output file"
+    # Load the cleaned data, estimate the naive baseline OLS effect, and save the coefficient output.
     baseline_df = load_baseline_data(OUTPUT_CSV)
     baseline_df = baseline_df.dropna(subset=["ai_program", "rev_growth"])
     intercept, slope = run_baseline_ols(baseline_df)
     save_baseline_results(intercept, slope, len(baseline_df), BASELINE_OUTPUT_JSON)
     print(f"Saved baseline regression result to {BASELINE_OUTPUT_JSON}")
 
-    # Step 3: propensity score matching
+    # Prompt: "Plot the distribution of propensity scores for both groups. Calculate the Standardized Mean Difference (SMD) for covariates before and after matching. Perform nearest–neighbor matching and re–estimate the effect of AI. - Save this output to a separate file"
+    # Load the cleaned data, build covariates, estimate propensity scores, match, compute SMDs, and save matching results.
     psm_df = load_psm_data(OUTPUT_CSV)
     X = build_covariate_matrix(psm_df)
     ps, _ = compute_propensity_scores(psm_df, X)
